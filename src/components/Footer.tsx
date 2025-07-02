@@ -25,7 +25,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-muted/20 border-t border-border">
+    <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
@@ -37,10 +37,10 @@ const Footer = () => {
                 className="h-8 w-auto"
               />
             </div>
-            <p className="text-muted-foreground text-sm mb-4">
+            <p className="text-gray-300 text-sm mb-4">
               A diversified digital entertainment and marketing conglomerate powering the future of online engagement.
             </p>
-            <div className="text-sm text-muted-foreground">
+            <div className="text-sm text-gray-300">
               <div className="gradient-text font-semibold">5,000+ Active Affiliates</div>
               <div>Trusted Partner Network</div>
             </div>
@@ -48,12 +48,12 @@ const Footer = () => {
 
           {/* Business Verticals */}
           <div>
-            <h3 className="font-semibold mb-4">Business Verticals</h3>
+            <h3 className="font-semibold mb-4 text-white">Business Verticals</h3>
             <ul className="space-y-2">
               {businessVerticals.map((vertical) => (
                 <li key={vertical.name} className="text-sm">
-                  <span className="font-medium">{vertical.name}</span>
-                  <span className="text-muted-foreground"> - {vertical.description}</span>
+                  <span className="font-medium text-white">{vertical.name}</span>
+                  <span className="text-gray-400"> - {vertical.description}</span>
                 </li>
               ))}
             </ul>
@@ -61,11 +61,11 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
+            <h3 className="font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-orange-500 transition-colors">
+                  <a href="#" className="text-sm text-gray-300 hover:text-orange-400 transition-colors">
                     {link}
                   </a>
                 </li>
@@ -75,10 +75,10 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="font-semibold mb-4">Contact Info</h3>
+            <h3 className="font-semibold mb-4 text-white">Contact Info</h3>
             <ul className="space-y-2">
               {contactInfo.map((info) => (
-                <li key={info} className="text-sm text-muted-foreground">
+                <li key={info} className="text-sm text-gray-300">
                   {info}
                 </li>
               ))}
@@ -86,9 +86,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <Separator className="my-8" />
+        <Separator className="my-8 bg-gray-700" />
 
-        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
+        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300">
           <div>
             © 2024 Mobtions. All rights reserved.
           </div>

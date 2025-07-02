@@ -3,36 +3,36 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system with Mobtions brand colors */
+/* Definition of the design system with professional white theme */
 
 @layer base {
   :root {
-    --background: 222 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 100%;
+    --foreground: 222 84% 4.9%;
 
-    --card: 222 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4.9%;
 
-    --popover: 222 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4.9%;
 
     --primary: 217 91% 60%;
-    --primary-foreground: 222 84% 4.9%;
+    --primary-foreground: 0 0% 98%;
 
     --secondary: 25 95% 53%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 217 32% 17%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 210 40% 98%;
+    --muted-foreground: 215 20% 35%;
 
     --accent: 25 95% 53%;
-    --accent-foreground: 210 40% 98%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217 32% 17%;
-    --input: 217 32% 17%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
     --ring: 217 91% 60%;
 
     --radius: 0.5rem;
@@ -49,7 +49,7 @@
   }
 }
 
-/* Custom animations and gradients - Updated with Mobtions colors */
+/* Custom animations and gradients - Updated for professional theme */
 .gradient-text {
   background: linear-gradient(135deg, #3b82f6, #f97316, #eab308);
   -webkit-background-clip: text;
@@ -58,7 +58,7 @@
 }
 
 .hero-gradient {
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #1e1b4b 100%);
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
 }
 
 .card-hover {

@@ -40,14 +40,14 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-gradient-to-b from-background to-muted/20">
+    <section id="services" className="py-24 bg-white">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
             Our <span className="gradient-text">Business Verticals</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Four distinct divisions working together to revolutionize digital entertainment and marketing
           </p>
         </div>
@@ -55,29 +55,29 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {services.map((service, index) => (
-            <Card key={service.title} className="card-hover bg-card/50 backdrop-blur-sm border-border/50 overflow-hidden group">
+            <Card key={service.title} className="card-hover bg-white border border-gray-200 shadow-lg hover:shadow-xl overflow-hidden group">
               <CardHeader className="relative">
                 <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${service.gradient} flex items-center justify-center mb-4`}>
                   <service.icon className="h-6 w-6 text-white" />
                 </div>
-                <CardTitle className="text-2xl font-bold flex items-center gap-2">
+                <CardTitle className="text-2xl font-bold flex items-center gap-2 text-gray-800">
                   {service.title}
-                  <span className="text-sm font-normal text-muted-foreground">({service.subtitle})</span>
+                  <span className="text-sm font-normal text-gray-500">({service.subtitle})</span>
                 </CardTitle>
-                <CardDescription className="text-base text-muted-foreground">
+                <CardDescription className="text-base text-gray-600">
                   {service.description}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature) => (
-                    <li key={feature} className="flex items-center text-sm text-muted-foreground">
+                    <li key={feature} className="flex items-center text-sm text-gray-600">
                       <div className="w-1.5 h-1.5 bg-orange-500 rounded-full mr-3"></div>
                       {feature}
                     </li>
                   ))}
                 </ul>
-                <Button variant="outline" className="w-full group-hover:bg-orange-500 group-hover:text-white transition-all duration-300">
+                <Button variant="outline" className="w-full border-gray-300 text-gray-700 hover:bg-gray-50 group-hover:bg-orange-500 group-hover:text-white group-hover:border-orange-500 transition-all duration-300">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -87,28 +87,28 @@ const Services = () => {
         </div>
 
         {/* Affiliate Network Section */}
-        <Card className="bg-gradient-to-r from-blue-500/10 to-orange-500/10 border-orange-500/20">
+        <Card className="bg-gradient-to-r from-blue-50 to-orange-50 border-2 border-blue-100 shadow-lg">
           <CardHeader className="text-center pb-4">
             <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
               <Network className="h-8 w-8 text-white" />
             </div>
-            <CardTitle className="text-3xl font-bold mb-2">
+            <CardTitle className="text-3xl font-bold mb-2 text-gray-800">
               <span className="gradient-text">Affiliate Ad Network</span>
             </CardTitle>
-            <CardDescription className="text-lg">
+            <CardDescription className="text-lg text-gray-600">
               Bridging advertisers and publishers with our extensive network
             </CardDescription>
           </CardHeader>
           <CardContent className="text-center">
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
               Our affiliate ad network serves as the backbone connecting advertisers with over 5,000 registered affiliates, 
               creating mutually beneficial partnerships while optimizing revenue streams for all stakeholders.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-to-r from-blue-500 to-orange-500 hover:opacity-90">
+              <Button className="bg-gradient-to-r from-blue-500 to-orange-500 hover:opacity-90 text-white">
                 Join as Advertiser
               </Button>
-              <Button variant="outline" className="border-orange-500/30 hover:bg-orange-500/10">
+              <Button variant="outline" className="border-orange-300 text-orange-600 hover:bg-orange-50">
                 Become an Affiliate
               </Button>
             </div>
