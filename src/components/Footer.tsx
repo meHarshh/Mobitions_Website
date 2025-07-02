@@ -31,10 +31,11 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">M</span>
-              </div>
-              <span className="text-xl font-bold gradient-text">Mobtions</span>
+              <img 
+                src="/lovable-uploads/34daace0-d3a1-4a82-b4bd-6d25ccaf02b5.png" 
+                alt="Mobtions Logo" 
+                className="h-8 w-auto"
+              />
             </div>
             <p className="text-muted-foreground text-sm mb-4">
               A diversified digital entertainment and marketing conglomerate powering the future of online engagement.
@@ -64,7 +65,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="#" className="text-sm text-muted-foreground hover:text-orange-500 transition-colors">
                     {link}
                   </a>
                 </li>

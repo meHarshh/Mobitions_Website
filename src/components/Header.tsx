@@ -20,10 +20,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">M</span>
-            </div>
-            <span className="text-xl font-bold gradient-text">Mobtions</span>
+            <img 
+              src="/lovable-uploads/34daace0-d3a1-4a82-b4bd-6d25ccaf02b5.png" 
+              alt="Mobtions Logo" 
+              className="h-8 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
@@ -32,7 +33,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors duration-200"
+                className="text-foreground hover:text-orange-500 transition-colors duration-200"
               >
                 {item.name}
               </a>
@@ -41,7 +42,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90">
+            <Button className="bg-gradient-to-r from-blue-500 to-orange-500 hover:opacity-90">
               Partner With Us
             </Button>
           </div>
@@ -63,13 +64,13 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-foreground hover:text-primary transition-colors duration-200"
+                  className="text-foreground hover:text-orange-500 transition-colors duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
-              <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 w-full mt-4">
+              <Button className="bg-gradient-to-r from-blue-500 to-orange-500 hover:opacity-90 w-full mt-4">
                 Partner With Us
               </Button>
             </nav>

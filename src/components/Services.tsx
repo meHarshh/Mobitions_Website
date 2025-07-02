@@ -11,7 +11,7 @@ const Services = () => {
       subtitle: 'Game Studio',
       description: 'Cutting-edge casual games with strategic ad monetization through CPC and CPM partnerships.',
       features: ['Casual Game Development', 'Ad Monetization', 'Brand Partnerships', 'Performance Campaigns'],
-      gradient: 'from-blue-500 to-purple-600',
+      gradient: 'from-blue-500 to-blue-600',
     },
     {
       icon: Gift,
@@ -19,7 +19,7 @@ const Services = () => {
       subtitle: 'Offer Wall App',
       description: 'Innovative reward platform creating win-win ecosystems for users, advertisers, and partners.',
       features: ['User Rewards System', 'App Downloads', 'Service Registrations', 'Targeted Offers'],
-      gradient: 'from-green-500 to-teal-600',
+      gradient: 'from-orange-500 to-red-500',
     },
     {
       icon: Globe,
@@ -27,7 +27,7 @@ const Services = () => {
       subtitle: 'HTML5 Gaming Platform',
       description: 'Exclusive gaming library with Google Ads integration and WebView technology for seamless integration.',
       features: ['HTML5 Games', 'Google Ads Integration', 'WebView Technology', 'Revenue Sharing'],
-      gradient: 'from-orange-500 to-red-600',
+      gradient: 'from-yellow-500 to-orange-500',
     },
     {
       icon: TrendingUp,
@@ -35,7 +35,7 @@ const Services = () => {
       subtitle: 'Content & Ad Network',
       description: 'Finance, health, fitness, and news platforms monetized through native ads, banners, and video ads.',
       features: ['Native Discovery Ads', 'Banner Advertising', 'Video Ads', 'Targeted Campaigns'],
-      gradient: 'from-purple-500 to-pink-600',
+      gradient: 'from-green-500 to-blue-500',
     },
   ];
 
@@ -72,12 +72,12 @@ const Services = () => {
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature) => (
                     <li key={feature} className="flex items-center text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3"></div>
+                      <div className="w-1.5 h-1.5 bg-orange-500 rounded-full mr-3"></div>
                       {feature}
                     </li>
                   ))}
                 </ul>
-                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                <Button variant="outline" className="w-full group-hover:bg-orange-500 group-hover:text-white transition-all duration-300">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -87,9 +87,9 @@ const Services = () => {
         </div>
 
         {/* Affiliate Network Section */}
-        <Card className="bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/20">
+        <Card className="bg-gradient-to-r from-blue-500/10 to-orange-500/10 border-orange-500/20">
           <CardHeader className="text-center pb-4">
-            <div className="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
               <Network className="h-8 w-8 text-white" />
             </div>
             <CardTitle className="text-3xl font-bold mb-2">
@@ -105,10 +105,10 @@ const Services = () => {
               creating mutually beneficial partnerships while optimizing revenue streams for all stakeholders.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90">
+              <Button className="bg-gradient-to-r from-blue-500 to-orange-500 hover:opacity-90">
                 Join as Advertiser
               </Button>
-              <Button variant="outline" className="border-primary/30 hover:bg-primary/10">
+              <Button variant="outline" className="border-orange-500/30 hover:bg-orange-500/10">
                 Become an Affiliate
               </Button>
             </div>
