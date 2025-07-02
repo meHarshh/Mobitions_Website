@@ -17,13 +17,13 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img 
               src="/lovable-uploads/34daace0-d3a1-4a82-b4bd-6d25ccaf02b5.png" 
               alt="Mobtions Logo" 
-              className="h-8 w-auto"
+              className="h-16 w-auto max-w-[200px] object-contain"
             />
           </div>
 

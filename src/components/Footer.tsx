@@ -30,11 +30,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
+            <div className="flex items-center space-x-2 mb-6">
               <img 
                 src="/lovable-uploads/34daace0-d3a1-4a82-b4bd-6d25ccaf02b5.png" 
                 alt="Mobtions Logo" 
-                className="h-8 w-auto"
+                className="h-12 w-auto max-w-[180px] object-contain"
               />
             </div>
             <p className="text-gray-300 text-sm mb-4">
